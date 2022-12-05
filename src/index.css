@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-title {
+  position: absolute;
+  left: 42%;
+  top: 1rem;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+}
+
+.section-center {
+  background: rgba(209, 209, 214, 0.13);
+  height: 100vh;
+  /* border: 1px solid red; */
+  display: flex;
+  place-items: center;
+}
+
+.budget-app {
+  /* border: 1px solid blue; */
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 5px black;
+  padding: 1rem;
+  /* background: white; */
+}
+
+.currency {
+  margin: 0 auto 1rem auto;
+  text-align: center;
+}
+
+.currency-form {
+  display: flex;
+  justify-content: center;
+}
+
+.currency-form select {
+  width: 6rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid green;
+}
+
+.currency-form button {
+  padding: 0.1rem 0.7rem;
+  text-transform: capitalize;
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: none;
+  border: 1px solid black;
+  transition: all 0.2s linear;
+  border: 1px solid green;
+}
+
+.currency-form button:hover {
+  background: green;
+  color: white;
+}
+
+/* budget container */
+.budget-container {
+  /* border: 1px solid red; */
+  /* height: 25rem; */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* input-container */
+
+.input-container {
+  /* border: 1px solid blue; */
+  width: 35%;
+}
+/* amount container */
+.amount-container,
+.expense-container {
+  border: 1px solid green;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.amount-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.amount-container form label,
+.expense-form label {
+  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.amount-container form input,
+.expense-form input {
+  margin: 0.5rem 0;
+  border: 1px solid green;
+  padding: 0.2rem;
+  text-transform: capitalize;
+  width: 70%;
+}
+
+.amount-container form button,
+.expense-form button {
+  padding: 0.2rem 0.5rem;
+  text-transform: capitalize;
+  color: green;
+  border: 1px solid green;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.3s linear;
+}
+
+.amount-container form button:hover {
+  background: green;
+  color: white;
+}
+/* amount container end*/
+/* expense container */
+.expense-container {
+  border: 1px solid red;
+}
+
+.expense-form input {
+  border: 1px solid red;
+}
+
+.expense-form button {
+  border-color: red;
+  color: red;
+}
+
+.expense-form button:hover,
+.clear-btn:hover {
+  background: red;
+  color: white;
+}
+
+.expense-detail-container {
+  margin-bottom: 1rem;
+}
+
+/* expense container end */
+
+/* display container */
+.display-container {
+  /* border: 1px solid green; */
+  width: 60%;
+}
+
+.budget-table {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 50%;
+  margin-bottom: 1rem;
+}
+
+.budget-table tr {
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.icon {
+  color: rgba(64, 64, 204, 0.836);
+  font-size: 2rem;
+}
+
+.number {
+  font-size: 1.4rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.number td:nth-child(1),
+.number td:nth-child(3) {
+  color: green;
+}
+
+.number td:nth-child(2) {
+  color: red;
+}
+
+/* expense table */
+.expense-table {
+  /* border: 1px solid blue; */
+  width: 100%;
+}
+
+.expense-table tr {
+  text-align: center;
+}
+
+.expense-title {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.next td:nth-child(1),
+.next td:nth-child(2) {
+  color: red;
+  text-transform: capitalize;
+}
+
+.next td:nth-child(3) button {
+  cursor: pointer;
+  transition: all 0.2s linear;
+  border: none;
+}
+
+.next td:nth-child(3) button:nth-child(1) {
+  color: green;
+}
+
+.next td:nth-child(3) button:nth-child(1):hover {
+  color: rgb(4, 56, 4);
+}
+
+.next td:nth-child(3) button:nth-child(2) {
+  color: red;
+  margin-left: 0.3rem;
+}
+
+.next td:nth-child(3) button:nth-child(2):hover {
+  color: rgb(151, 5, 5);
+}
+
+.overflow {
+  /* border: 1px solid red; */
+  height: calc(100% - 50% - 1rem);
+  overflow: scroll;
+}
+
+/* alert */
+.alert {
+  text-align: center;
+  text-transform: capitalize;
+  width: 7rem;
+  margin: 0 auto 1rem auto;
+  padding: 0.2rem 0;
+}
+
+.alert-danger {
+  background: rgba(255, 72, 72, 0.712);
+  color: rgb(51, 37, 37);
+}
+
+.alert-success {
+  background: rgba(0, 128, 0, 0.466);
+  color: rgb(51, 37, 37);
+}
+
+.clear-btn {
+  padding: 0.1rem 0.2rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: none;
+  border: 1px solid red;
+  transition: all 0.2s linear;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 43%;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 0 0 0.5rem 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
